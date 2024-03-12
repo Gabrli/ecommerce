@@ -6,13 +6,17 @@ i18n.use(initReactI18next).init({
     en: {
       translation: {
         searchInputPlaceholder: "Search name product",
-        btnLogin: "Login"
+        btnLogin: "Login",
+        baner_title: "The New Collection !",
+        btn_baner: "Try now !"
       },
     },
     pl: {
       translation: {
         searchInputPlaceholder: "Znajdź produkt",
-        btnLogin: "Zaloguj"
+        btnLogin: "Zaloguj",
+        baner_title: "Nowa kolekcja !",
+        btn_baner: "Sprawdź teraz !",
       },
     },
   },

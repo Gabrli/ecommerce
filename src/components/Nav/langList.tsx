@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import ButtonLang from "./btnLang";
 import { useTranslation } from "react-i18next";
+import { langContext } from "../../contexts/langContext";
 
-export default function LangList() {
+export default function LangList(props: {setLang: React.Dispatch<React.SetStateAction<string>>}) {
+  const { setLang } = props
   const [isDrop, setIsDrop] = useState(false);
-  const [lang, setLang] = useState("en");
+  const lang = useContext(langContext)
   const { i18n } = useTranslation();
 
   return (
